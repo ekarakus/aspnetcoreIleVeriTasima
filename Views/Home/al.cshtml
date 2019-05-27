@@ -1,0 +1,22 @@
+﻿
+<h1>
+    @if (Context.Request.Query["meyve"].FirstOrDefault()==null)
+    {
+        <div>
+            <p>
+                Elin Boş Gelme<br/>
+
+                <a href="/home/gonder">Burdan Bana Ulaş</a>
+            </p>
+        </div>
+    }
+    else
+    {
+        <div>
+            <h3>
+                Gönderilen meyve @Context.Request.Query["meyve"]
+            </h3>
+        </div>
+    }
+
+</h1>
